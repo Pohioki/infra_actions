@@ -54,5 +54,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: pohioki/infra_actions:v.18.04.2023.2
+          tags: pohioki/infra_actions:v.18.04.2023.4
 
