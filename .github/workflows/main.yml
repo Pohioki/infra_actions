@@ -70,9 +70,9 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             # Выполняет pull образа с DockerHub
-            sudo docker pull pohioki/infra_actions:v.18.04.2023.5
+            sudo docker pull pohioki/infra_actions:latest
             #остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
-            sudo docker run --rm -d -p 8000:8000 pohioki/infra_actions
+            sudo docker run --rm -d -p 8000:8000 pohioki/infra_actions:v.18.04.2023.5
     
 
