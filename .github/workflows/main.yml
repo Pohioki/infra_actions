@@ -72,6 +72,6 @@ jobs:
             sudo docker pull pohioki/infra_actions:v.18.04.2023.4
             #остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
-            sudo docker run --rm -d -p 8000:8000 pohioki/infra_actions:v.18.04.2023.4
+            sudo docker run --rm -d -p 8000:8000 pohioki/infra_actions:v.19.04.2023.4
     
 
